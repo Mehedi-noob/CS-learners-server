@@ -25,6 +25,8 @@ app.get('/courses/:id', (req, res) =>{
     const selectedCourse = courses.find(sel=> sel.id === id);
     res.send(selectedCourse);
 });
+
+// category section
 app.get('/categories', (req, res) =>{
     res.send(categories);
 });
