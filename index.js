@@ -7,6 +7,8 @@ app.use(cors());
 
 const categories = require('./data/categories.json');
 
+// a massive problem solved
+
 app.get('/', (req, res) =>{
     res.send('server is running');
 });
