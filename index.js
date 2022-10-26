@@ -14,6 +14,12 @@ app.get('/', (req, res) =>{
     res.send('server is running');
 });
 
+// For all of the courses
+app.get('/courses', (req, res) =>{
+    res.send(courses);
+});
+
+//For specific courses
 app.get('/courses/:id', (req, res) =>{
     const id = req.params.id;
     const selectedCourse = courses.find(sel=> sel.id === id);
